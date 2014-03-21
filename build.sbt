@@ -1,6 +1,6 @@
 name := "hello-scaladin"
 
-scalaVersion := "2.10.1"
+scalaVersion := "2.10.3"
 
 libraryDependencies ++= Seq(
   "com.vaadin" % "vaadin-server" % "7.1.12",

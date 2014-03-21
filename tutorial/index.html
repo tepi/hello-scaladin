@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Hello Scaladin - Activator Template</title>
+</head>
+<body>
+
+	<div>
+		<h2>Introduction to Scaladin</h2>
+
+		<p>
+			<a href="https://vaadin.com/directory#addon/scaladin" target="_blank">Scaladin</a>
+			is a wrapper for the <a href="https://vaadin.com" target="_blank">Vaadin
+				Framework</a>, making it easier to build Vaadin applications using the
+			Scala language.
+		</p>
+		<p>
+			For more information about Vaadin Framework, please refer to the 
+			<a href="https://vaadin.com/book" target="_blank">Book of Vaadin</a>.
+		</p>
+		<p>
+			For more information about Scaladin, you can explore
+			<a href="https://github.com/henrikerola/scaladin" target="_blank">Scaladin github page</a>
+			or ask questions in the 
+			<a href="https://vaadin.com/forum/#!/thread/530127/530126" target="_blank">Vaadin forum thread</a>.
+		</p>
+	</div>
+	<div>
+		<h2>Explore the Code</h2>
+
+		<p>
+			You've just created a Scaladin application!  This is a basic "Hello,
+			World" application. Let's look at the 
+			<a href="#code/src/main/scala/org/vaadin/scaladin/hello/HelloScaladinUI.scala" class="shortcut">HelloScaladinUI.scala</a>
+			file.
+		</p>
+
+		<p>
+			This file is the UI class of you Scaladin application. The HelloScaladinUI class 
+			extends the <code>vaadin.scala.UI</code> class which is a base class for all Scaladin UIs.
+			One application can contain an arbitrary amount of UI classes, but this example
+			has only one UI class. Let's look inside the class:
+		</p>
+		<pre><code>content = Button("Click me!", Notification.show("Hello, Scaladin!"))</code></pre>
+		<p>
+			Each UI must have a content, which is the base component rendered in the browser window.
+			In this example we set a Button (<code>vaadin.scala.Button</code>) component as the content
+			of our UI. The Button component accepts a string and a click listener as the constructor argument; 
+			this string will be shown as the caption of the Button component when the application is opened
+			in the browser. Once you click the button, a Notification component will be shown.
+		</p>
+		<p>
+			The content can be any Vaadin / Scaladin component - you can find a good set of choices in the
+			<code>vaadin.scala</code> package within the Scaladin add-on.
+		</p>
+	</div>
+	<div>
+		<h2>Running Scaladin Applications</h2>
+
+		<p>
+			You can deploy this scaladin
+			application to an embedded Jetty servlet container by going to the 
+			<a href="#run" class="shortcut">Run</a> tab, clicking the Start button, and then accessing
+			<a href="http://localhost:9000" target="_blank">http://localhost:9000</a>
+			on your computer. You should end up with a simple application showing a button with the
+			caption of "Click me!".
+		</p>
+
+		<p>
+			You can also run Scaladin applications easily from the command line using sbt. 
+			First you must of course compile the application by typing <code>compile</code>
+			in the sbt prompt. Once the compilation is done you can simply type <code>container:start</code>
+			to start the Jetty server and deploy your application.
+		</p>
+	</div>
+	<div>
+		<h2>Resources</h2>
+		
+		<p>Information about Vaadin and Scaladin:</p>
+		<ul>
+		<li><a href="https://vaadin.com" target="_blank">Vaadin Framework</a></li>
+		<li><a href="https://vaadin.com/directory#addon/scaladin" target="_blank">Scaladin Add-On</a></li>
+		<li><a href="https://github.com/henrikerola/scaladin" target="_blank">Scaladin github page</a></li>
+		<li><a href="https://vaadin.com/forum/#!/thread/530127/530126" target="_blank">Scaladin discussion thread</a></li>
+		</ul>
+		<p>Basic introduction to Scala language:</p>
+		<ul>
+		<li><a href="http://docs.scala-lang.org/tutorials/" target="_blank">Scala Tutorials</a></li>
+      	<li><a href="http://twitter.github.io/scala_school/" target="_blank">Scala School</a> - From Twitter</li>
+		</ul>
+	</div>
+</body>
+</html>

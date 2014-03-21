@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="VaadinScala" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+        <display-name>Hello Scaladin Application</display-name>
+        <context-param>
+                <description>
+                Vaadin production mode</description>
+                <param-name>productionMode</param-name>
+                <param-value>false</param-value>
+        </context-param>
+        <servlet>
+                <servlet-name>Hello Scaladin Application</servlet-name>
+                <servlet-class>vaadin.scala.server.ScaladinServlet</servlet-class>
+                <init-param>
+                        <param-name>ScaladinUI</param-name>
+                        <param-value>org.vaadin.scaladin.hello.HelloScaladinUI</param-value>
+                </init-param>
+        </servlet>
+        <servlet-mapping>
+                <servlet-name>Hello Scaladin Application</servlet-name>
+                <url-pattern>/*</url-pattern>
+        </servlet-mapping>
+</web-app>
